@@ -16,7 +16,7 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Cambiando el texto para hacer el primer commit en GitHub!/ROY"
+                Text="Cambiando el texto para hacer el primer commit en GitHub!/ROY2"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
