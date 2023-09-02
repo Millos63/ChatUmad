@@ -53,7 +53,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Paginas\" />
+	  <MauiXaml Update="Paginas\Prueba.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
