@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatUmad.Paginas.ChatDirecto"
+             Title="ChatDirecto"
+             BackgroundColor="#dbdbdb">
+    <VerticalStackLayout>
+        <Label 
+            Text="Coordinador Zapata"
+            FontSize="Medium"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+        <Grid>
+            <HorizontalStackLayout>
+
+                <Entry
+                    x:Name="chat"
+                    Placeholder="Mensaje"
+                    BackgroundColor="White"
+                    ClearButtonVisibility="WhileEditing"
+                    WidthRequest="950"
+                    Margin="10"
+                />
+                <Button
+                    x:Name="enviar"
+                    BackgroundColor="#003050"
+                    TextColor="White"
+                    Text="Enviar"
+                    WidthRequest="80"
+                    HeightRequest="40"
+                />
+            </HorizontalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>
