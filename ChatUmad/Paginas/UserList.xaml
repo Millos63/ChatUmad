@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatUmad.Paginas.UserList"
+             Title="ChatUmad">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Padding="20" Spacing="20">
+                <Label Text="Lista de usuarios" FontSize="24" HorizontalOptions="Center" />
+
+                <Button Text="Agregar"
+                FontSize="17"
+                TextColor="White"
+                BackgroundColor="#1B2953"
+                CornerRadius="5"
+                HeightRequest="40"
+                WidthRequest="150"
+                Clicked="OnClickedAdd"
+                HorizontalOptions="End" />
+
+            </StackLayout>
+
+            <ListView x:Name="UsersListView" SeparatorVisibility="None" Grid.Row="1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10" BackgroundColor="WhiteSmoke" Padding="10" Margin="20,10">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Spacing="2">
+                                        <Label Text="{Binding Name}" FontSize="18" TextColor="#333333" />
+                                        <Label Text="{Binding Email}" FontSize="14" TextColor="#666666" />
+                                        <Label Text="{Binding Degree}" FontSize="14" TextColor="#666666" />
+                                        <Label Text="{Binding Registration}" FontSize="14" TextColor="#666666" />
+                                        <Label Text="{Binding Role}" FontSize="14" TextColor="#666666" />
+                                        <Label Text="{Binding State}" FontSize="14" TextColor="#666666" />
+                                    </StackLayout>
+
+                                    <Button Text="Editar"
+                                    Grid.Column="1"
+                                    FontSize="16"
+                                    TextColor="White"
+                                    BackgroundColor="#1B2953"
+                                    CornerRadius="5"
+                                    HeightRequest="32"
+                                    WidthRequest="70"
+                                    VerticalOptions="Center"
+                                    CommandParameter="{Binding .}"
+                                    Clicked="OnClickedEdit" />
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
