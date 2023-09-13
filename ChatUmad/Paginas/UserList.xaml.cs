@@ -30,7 +30,7 @@ public partial class UserList : ContentPage
     private async void OnClickedAdd(object sender, EventArgs e)
     {
         // Navegar a la página de selección de rol
-        await Navigation.PushAsync(new SelectRole());
+        await Navigation.PushAsync(new AddUser());
     }
 }
 

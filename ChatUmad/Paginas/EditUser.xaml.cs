@@ -3,6 +3,7 @@ namespace ChatUmad.Paginas;
 public partial class EditUser : ContentPage
 {
     private User user;
+
     public EditUser(User user)
 	{
 		InitializeComponent();
@@ -19,6 +20,7 @@ public partial class EditUser : ContentPage
         StatePicker.SelectedItem = user.State;
     }
 
+
     private void OnClickSave(object sender, EventArgs e)
     {
         user.Name = NameEntry.Text;
@@ -28,6 +30,6 @@ public partial class EditUser : ContentPage
         user.Role = RolePicker.SelectedItem as string;
         user.State = StatePicker.SelectedItem as string;
 
-        //Navigation.PopAsync();
+        Navigation.PopAsync();
     }
 }
