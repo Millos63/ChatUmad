@@ -49,6 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Night_Owl.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\contra.png" />
 	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\usuario.png" />
@@ -59,6 +63,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Paginas\AddUser.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -69,7 +76,7 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\SelectRole.xaml">
-	    <Generator>MSBuild:Compile</Generator>
+		<Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\UserList.xaml">
 	    <Generator>MSBuild:Compile</Generator>

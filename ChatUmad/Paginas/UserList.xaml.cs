@@ -9,9 +9,9 @@ public partial class UserList : ContentPage
         // Ejemplos de usuarios ficticios
         var user = new List<User>
             {
-                new User { Name = "Juan Pérez", Email = "juan@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Alumno", State = "Activo" },
-                new User { Name = "Ana López", Email = "ana@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Coordinador", State = "Activo" },
-                new User { Name = "Carlos Rodríguez", Email = "carlos@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Profesor", State = "Activo" },
+                new User { Name = "Juan Pérez", Email = "juan@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Alumno", State = "Activo", UserImage = "Night_Owl.png" },
+                new User { Name = "Ana López", Email = "ana@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Coordinador", State = "Activo", UserImage = "Night_Owl.png" },
+                new User { Name = "Carlos Rodríguez", Email = "carlos@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Profesor", State = "Activo", UserImage = "Night_Owl.png" },
             };
 
         UsersListView.ItemsSource = user;
@@ -30,7 +30,7 @@ public partial class UserList : ContentPage
     private async void OnClickedAdd(object sender, EventArgs e)
     {
         // Navegar a la página de selección de rol
-        await Navigation.PushAsync(new SelectRole());
+        await Navigation.PushAsync(new AddUser());
     }
 }
 
@@ -42,4 +42,5 @@ public class User
     public string Registration { get; internal set; }
     public string Role { get; internal set; }
     public string State { get; internal set; }
+    public string UserImage { get;  set; }
 }
