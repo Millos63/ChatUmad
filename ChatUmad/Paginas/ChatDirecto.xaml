@@ -2,36 +2,100 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChatUmad.Paginas.ChatDirecto"
-             Title="ChatDirecto"
-             BackgroundColor="#dbdbdb">
-    <VerticalStackLayout>
-        <Label 
-            Text="Coordinador Zapata"
-            FontSize="Medium"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            TextColor="Black"/>
-        <Grid>
-            <HorizontalStackLayout>
+             Title="ChatUMAD">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="lableStyle">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="FontSize" Value="20" ></Setter>
+                <Setter Property="FontAttributes" Value="Bold" ></Setter>
 
-                <Entry
-                    x:Name="chat"
-                    Placeholder="Mensaje"
-                    BackgroundColor="White"
-                    ClearButtonVisibility="WhileEditing"
-                    WidthRequest="950"
-                    Margin="10"
-                />
-                <Button
-                    x:Name="enviar"
-                    BackgroundColor="#003050"
+            </Style>
+            <Style TargetType="Entry" x:Key="EntryStyle">
+                <Setter Property="TextColor" Value="Black"></Setter>
+                <Setter Property="Placeholder" Value="Escribe tu mensaje... " ></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Image Grid.Row="0" Source="logo.jpg"  
+                   HorizontalOptions="Start" 
+                   VerticalOptions="Start" 
+                   HeightRequest="100" 
+                   WidthRequest="100" />
+
+
+
+            <Frame Grid.Row="0" BackgroundColor="#D9D9D9" HasShadow="True" Padding="10" CornerRadius="0">
+
+
+                <StackLayout>
+
+                    <StackLayout HorizontalOptions="Start">
+                        <Frame Padding="0" CornerRadius="70" BackgroundColor="Transparent" WidthRequest="70">
+                            <Image Source="coordi.png" Aspect="AspectFill"/>
+                        </Frame>
+                       
+                    </StackLayout>
+
+                    <Label 
+                        Style="{StaticResource lableStyle}"
+                        Text="Coordinador Carlos Zapata"
+                        BackgroundColor="#1d3557"/>
+
+                    <BoxView Color="#1B2953"
+                    HeightRequest="2"
+                    HorizontalOptions="Fill" 
+                    />
+                </StackLayout>
+
+
+            </Frame>
+
+            <!-- Contenido principal (lista y entrada de texto) -->
+            <StackLayout>
+                <ListView 
+                          VerticalOptions="FillAndExpand">
+                    <!-- ... (Plantilla de mensajes) ... -->
+                </ListView>
+
+                <Frame Padding="15" CornerRadius="5" BackgroundColor="White" HorizontalOptions="End" Margin="25" WidthRequest="550">
+                    <Label Text="Buenos días Coordinador, quiero pedirle su ayuda para meter materias" 
+                      TextColor="Black"/>
+                </Frame>
+
+                <Frame Padding="15" CornerRadius="5" BackgroundColor="#1B2953" HorizontalOptions="Start" Margin="25" WidthRequest="550">
+                    <Label Text="Buenos días, ¿Qué necesitas?" 
+                    TextColor="White"/>
+                </Frame>
+
+                <!-- Caja de entrada de texto y botón de envío -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                    <Entry 
+                           Style="{StaticResource EntryStyle}"
+                           VerticalOptions="FillAndExpand"
+                           HorizontalOptions="FillAndExpand" 
+                            Placeholder="Escribe tu mensaje..."
+                            PlaceholderColor="Black"
+                            BackgroundColor="White"/>
+                        <Button Text="Enviar"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            BackgroundColor="#4a5568"
+                            VerticalOptions="FillAndExpand"
+                            WidthRequest="80" 
+                               />
+                    <Button Text="Adjuntar archivo"
                     TextColor="White"
-                    Text="Enviar"
-                    WidthRequest="80"
-                    HeightRequest="40"
-                />
-            </HorizontalStackLayout>
+                    FontAttributes="Bold"
+                    BackgroundColor="#1B2953"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="180" />
+                </StackLayout>
+            </StackLayout>
         </Grid>
-    </VerticalStackLayout>
+    </ContentPage.Content>
+
 
 </ContentPage>
