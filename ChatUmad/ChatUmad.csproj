@@ -49,10 +49,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\contra.png" />
+	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\usuario.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Paginas\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Paginas\EditUser.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
