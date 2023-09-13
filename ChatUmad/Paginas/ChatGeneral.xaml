@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChatUmad.Paginas.ChatGeneral"
-             Title="ChatUmad">
+             
+             Style="{StaticResource ContentPageStyle}">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label" x:Key="lableStyle">
@@ -14,6 +15,10 @@
             <Style TargetType="Entry" x:Key="EntryStyle">
                 <Setter Property="TextColor" Value="Black"></Setter>
                 <Setter Property="Placeholder" Value="Escribe tu mensaje... " ></Setter>
+            </Style>
+            <Style TargetType="ContentPage" x:Key="ContentPageStyle" >
+                <Setter Property="BackgroundColor" Value="Red"> </Setter>
+                
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -64,6 +69,12 @@
                             BackgroundColor="#1B2953"
                             VerticalOptions="FillAndExpand"
                             WidthRequest="80" />
+                    <Button Text="Adjuntar archivo"
+        TextColor="White"
+        FontAttributes="Bold"
+        BackgroundColor="#1B2953"
+        VerticalOptions="FillAndExpand"
+        WidthRequest="180" />
                 </StackLayout>
             </StackLayout>
         </Grid>
