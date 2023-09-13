@@ -5,14 +5,17 @@
              Title="ChatUMAD">
 
     <ContentPage.Content>
-        <Grid>
+        <Grid BackgroundColor="#D9D9D9">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <StackLayout Padding="20" Spacing="20">
-                <Label Text="Lista de usuarios" FontSize="24" HorizontalOptions="Center" />
+                <Label Text="Lista de usuarios" 
+                       TextColor="Black"
+                       FontSize="24" 
+                       HorizontalOptions="Center"/>
 
                 <Button Text="Agregar"
                 FontSize="17"
@@ -41,13 +44,20 @@
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
 
-                                    <StackLayout Spacing="2">
-                                        <Label Text="{Binding Name}" FontSize="18" TextColor="#333333" />
-                                        <Label Text="{Binding Email}" FontSize="14" TextColor="#666666" />
-                                        <Label Text="{Binding Degree}" FontSize="14" TextColor="#666666" />
-                                        <Label Text="{Binding Registration}" FontSize="14" TextColor="#666666" />
-                                        <Label Text="{Binding Role}" FontSize="14" TextColor="#666666" />
-                                        <Label Text="{Binding State}" FontSize="14" TextColor="#666666" />
+                                    <!-- StackLayout para la imagen del usuario y los campos -->
+                                    <StackLayout Orientation="Horizontal" Spacing="10">
+                                        <!-- Imagen del usuario -->
+                                        <Image Source="{Binding UserImage}" HeightRequest="50" WidthRequest="50" VerticalOptions="Center" />
+
+                                        <!-- StackLayout para los campos del usuario -->
+                                        <StackLayout Spacing="2">
+                                            <Label Text="{Binding Name}" FontSize="18" TextColor="#333333" />
+                                            <Label Text="{Binding Email}" FontSize="14" TextColor="#666666" />
+                                            <Label Text="{Binding Degree}" FontSize="14" TextColor="#666666" />
+                                            <Label Text="{Binding Registration}" FontSize="14" TextColor="#666666" />
+                                            <Label Text="{Binding Role}" FontSize="14" TextColor="#666666" />
+                                            <Label Text="{Binding State}" FontSize="14" TextColor="#666666" />
+                                        </StackLayout>
                                     </StackLayout>
 
                                     <Button Text="Editar"

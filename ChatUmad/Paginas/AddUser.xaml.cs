@@ -1,5 +1,3 @@
-using Windows.System;
-
 namespace ChatUmad.Paginas;
 
 public partial class AddUser : ContentPage

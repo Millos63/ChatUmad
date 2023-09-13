@@ -4,9 +4,12 @@
              x:Class="ChatUmad.Paginas.AddUser"
              Title="ChatUMAD">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView BackgroundColor="#D9D9D9">
             <StackLayout Padding="20" Spacing="20">
-                <Label Text="Usuario" FontSize="24" HorizontalOptions="Center" />
+                <Label Text="Usuario" 
+                       TextColor="Black"
+                       FontSize="24" 
+                       HorizontalOptions="Center" />
 
                 <Entry Placeholder="Nombre"
                x:Name="NameEntry"
@@ -38,7 +41,7 @@
                Keyboard="Numeric" />
 
                 <Picker x:Name="RolePicker"
-                Title="Seleccionar Rol"
+                Title="Seleccionar rol"
                 TitleColor="#666666"
                 TextColor="#333333"
                 BackgroundColor="#EDEDED"
@@ -57,7 +60,7 @@
                 </Picker>
 
                 <Picker x:Name="StatePicker"
-                Title="Seleccionar Estado"
+                Title="Seleccionar estado"
                 TitleColor="#666666"
                 TextColor="#333333"
                 BackgroundColor="#EDEDED"
