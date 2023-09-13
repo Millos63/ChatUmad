@@ -22,7 +22,6 @@
             VerticalOptions="FillAndExpand"
             Orientation="Vertical"
             VerticalScrollBarVisibility="Default">
-
             <ListView ItemsSource="{Binding Avisos}" BackgroundColor="#D9D9D9">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -32,8 +31,27 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </ScrollView>
+        <!--<Button
+        Grid.Row="1"
+        Text="Editar"
+        HorizontalOptions="End"
+        VerticalOptions="StartAndExpand"/>-->
+        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Start">
+            <Button Text="Ver"
+                    Clicked="OnCounterClicked1"
+                    BackgroundColor="#1B2953"
+                    TextColor="White"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="End"/>
+
+            <Button Text="Editar"
+                    Clicked="OnCounterClicked2"
+                    BackgroundColor="#1B2953"
+                    TextColor="White"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+        </StackLayout>
         <Entry
             Grid.Row="2"
             Placeholder="Insertar Aviso"
@@ -43,9 +61,8 @@
             BackgroundColor="White"
             />
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="End">
-            <Button Text="Enviar"
+            <Button Text="Publicar"
                     SemanticProperties.Hint="Counts the number of times you click"
-
                     BackgroundColor="#1B2953"
                     TextColor="White"
                     HorizontalOptions="Fill"

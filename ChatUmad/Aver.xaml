@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ChatUmad.ver_avisos"
-             Title="ver_avisos"
-             BackgroundColor="White">
+             x:Class="ChatUmad.Aver"
+             Title="Ver Avisos Generales">
     <Grid Margin="0"
           RowDefinitions="Auto,*,Auto">
         <Label
@@ -22,7 +21,6 @@
             VerticalOptions="FillAndExpand"
             Orientation="Vertical"
             VerticalScrollBarVisibility="Default">
-
             <ListView ItemsSource="{Binding Avisos}" BackgroundColor="#D9D9D9">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -32,15 +30,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </ScrollView>
-        <Button
-            Grid.Row="1"
-            Text="Ver"
-            Clicked="OnCounterClicked"
-            BackgroundColor="#1B2953"
-            TextColor="White"
-            HorizontalOptions="End"
-            VerticalOptions="StartAndExpand"/>
     </Grid>
 </ContentPage>

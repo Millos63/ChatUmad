@@ -16,7 +16,14 @@ public partial class avisos : ContentPage
         this.BindingContext = this;
     }
 
-
+    private void OnCounterClicked1(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Aver());
+    }
+    private void OnCounterClicked2(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Aeditar());
+    }
     private void OnCounterClicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new archivo());
