@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ChatUmad.MainPage"
-             Title="Home">
+             x:Class="ChatUmad.MainPage">
 
     <ScrollView>
         <VerticalStackLayout
@@ -17,7 +16,7 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Cambiando el texto para hacer el primer commit en GitHub!Dariel"
+                Text="Cambiando el texto para hacer el primer commit en GitHub!/EMIGDIO"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />

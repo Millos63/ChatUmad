@@ -70,8 +70,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\EditUser.xaml">
-	    <Generator>MSBuild:Compile</Generator>
+		  <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+
 	  <MauiXaml Update="Paginas\AgregarMateria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
