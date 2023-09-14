@@ -6,7 +6,9 @@
 
         public MainPage()
         {
+
             InitializeComponent();
+
         }
 
         private async void OnCounterClicked(object sender, EventArgs e)
@@ -20,7 +22,7 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
 
-            await Navigation.PushAsync(new Paginas.ChatDirecto());
+            await Navigation.PushAsync(new Paginas.ChatGeneral());
         }
     }
 }
