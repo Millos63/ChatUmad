@@ -8,7 +8,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate paginas:ChatGeneral}"
-        Route="ChatGeneral" />
+        ContentTemplate="{DataTemplate paginas:UserList}"
+        Route="UserList" />
 
 </Shell>

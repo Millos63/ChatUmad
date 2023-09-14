@@ -22,7 +22,7 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
 
-            await Navigation.PushAsync(new Paginas.ChatGeneral());
+            //await Navigation.PushAsync(new Paginas.UserList());
         }
     }
 }
