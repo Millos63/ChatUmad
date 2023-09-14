@@ -9,9 +9,9 @@ public partial class UserList : ContentPage
         // Ejemplos de usuarios ficticios
         var user = new List<User>
             {
-                new User { Name = "Juan Pérez", Email = "juan@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Alumno", State = "Activo", UserImage = "Night_Owl.png" },
-                new User { Name = "Ana López", Email = "ana@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Coordinador", State = "Activo", UserImage = "Night_Owl.png" },
-                new User { Name = "Carlos Rodríguez", Email = "carlos@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Profesor", State = "Activo", UserImage = "Night_Owl.png" },
+                new User { Name = "Juan Pérez", Email = "juan@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Alumno", State = "Activo", UserImage = "night_owl.png" },
+                new User { Name = "Ana López", Email = "ana@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Coordinador", State = "Activo", UserImage = "night_owl.png" },
+                new User { Name = "Carlos Rodríguez", Email = "carlos@example.com", Degree = "Ing. Software", Registration = "20002020", Role = "Profesor", State = "Activo", UserImage = "night_owl.png" },
             };
 
         UsersListView.ItemsSource = user;
