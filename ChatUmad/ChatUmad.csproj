@@ -49,11 +49,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\Coordi.png" />
+		<None Remove="Resources\Images\Coordi.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\Night_Owl.png" />
+	  <None Remove="Resources\Images\night_owl.png" />
 	</ItemGroup>
 
 	<ItemGroup>
