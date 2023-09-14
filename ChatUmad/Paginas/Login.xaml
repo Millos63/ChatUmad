@@ -44,7 +44,7 @@
                             <Frame HeightRequest="40" WidthRequest="40" CornerRadius="20" Padding="0" Margin="0">
                                 <Image Source="contra.png" Aspect="AspectFill" Margin="0"/>
                             </Frame>
-                            <Entry Placeholder="Contraseña" PlaceholderColor="DarkGray" BackgroundColor="AliceBlue" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            <Entry Placeholder="Contraseña" PlaceholderColor="DarkGray" BackgroundColor="AliceBlue" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" IsPassword="True"/>
                         </StackLayout>
                     </Frame>
 
@@ -56,7 +56,7 @@
                         <Label Text="Olvidé mi contraseña" TextColor="DarkBlue" FontAttributes="Bold" HorizontalOptions="End" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
                     </StackLayout>
 
-                    <Button Text="Iniciar sesión" BackgroundColor="#003050" TextColor="White" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0"/>
+                    <Button Text="Iniciar sesión" BackgroundColor="#1B2953" TextColor="White" FontAttributes="Bold" WidthRequest="200" Margin="0,15,0,0"/>
 
                 </StackLayout>
             </Grid>
