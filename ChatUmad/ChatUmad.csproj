@@ -53,22 +53,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Aeditar.xaml">
+	  <MauiXaml Update="Paginas\Aeditar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="archivo.xaml">
+	  <MauiXaml Update="Paginas\archivo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Aver.xaml">
+	  <MauiXaml Update="Paginas\Aver.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="avisos.xaml">
+	  <MauiXaml Update="Paginas\avisos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Prueba.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ver_avisos.xaml">
+	  <MauiXaml Update="Paginas\ver_avisos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
