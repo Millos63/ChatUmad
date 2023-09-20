@@ -14,13 +14,10 @@
         {
             
             await Navigation.PushAsync(new Paginas.Chat());
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            
             //await Navigation.PushAsync(new Paginas.UserList());
         }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
-
-            //await Navigation.PushAsync(new Paginas.UserList());
         }
     }
 }
