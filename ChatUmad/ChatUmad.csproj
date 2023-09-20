@@ -70,36 +70,47 @@
 	  <MauiXaml Update="Paginas\AddUser.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\EditUser.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\AgregarMateria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\EditarMateria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\Materias.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\ChatDirecto.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\Chat.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\Prueba.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\SelectRole.xaml">
 		<Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	  <MauiXaml Update="Paginas\UserList.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+		
 	</ItemGroup>
 
 </Project>
