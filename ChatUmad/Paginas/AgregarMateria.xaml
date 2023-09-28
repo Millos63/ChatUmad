@@ -1,0 +1,71 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatUmad.Paginas.AgregarMateria"
+             Title="ChatUMAD">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#D9D9D9">
+            <StackLayout Padding="20" Spacing="20">
+                <Label Text="Materia" 
+                       TextColor="Black"
+                       FontSize="24" 
+                       HorizontalOptions="Center" />
+
+                <Entry Placeholder="Nombre"
+               x:Name="NameEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333" />
+
+                <Entry Placeholder="Codigo"
+               x:Name="CodeEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333" />
+
+                <Entry Placeholder="Seccion"
+               x:Name="SeccionEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333" />
+
+                <Entry Placeholder="Grupo"
+               x:Name="GroupEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333"
+               Keyboard="Numeric" />
+
+                <Entry Placeholder="Maestro"
+                x:Name="TeacherEntry"
+                FontSize="18"
+                BackgroundColor="#EDEDED"
+                HeightRequest="40"
+                TextColor="#333333"
+                />
+
+                <Entry Placeholder="Creditos"
+                x:Name="CreditsEntry"
+                FontSize="18"
+                BackgroundColor="#EDEDED"
+                HeightRequest="40"
+                TextColor="#333333"
+                Keyboard="Numeric" />
+
+                <Button Text="Guardar"
+                FontSize="18"
+                TextColor="White"
+                BackgroundColor="Green"
+                CornerRadius="5"
+                HeightRequest="40"
+                WidthRequest="120"
+                Clicked="OnClickSave"
+                HorizontalOptions="End" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
