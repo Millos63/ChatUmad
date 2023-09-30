@@ -8,7 +8,8 @@ namespace ChatUmad
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            MainPage = new TabbedPage2();
+
         }
     }
 }
