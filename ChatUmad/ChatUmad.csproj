@@ -70,9 +70,14 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Controles\FlyoutHeaderControler.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Paginas\AddUser.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -114,6 +119,14 @@
 	  </MauiXaml>
 		
 	  <MauiXaml Update="Paginas\UserList.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+		
+	  <MauiXaml Update="Views\Dashboard\DashboardPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+		
+	  <MauiXaml Update="Views\Startup\Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 		
