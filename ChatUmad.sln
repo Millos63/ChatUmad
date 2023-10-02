@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatUmad", "ChatUmad\ChatUmad.csproj", "{7E28EAC1-197A-4B0A-84BA-F62D0B95A7D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatUmad", "ChatUmad\ChatUmad.csproj", "{7E28EAC1-197A-4B0A-84BA-F62D0B95A7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatUmadWeb", "ChatUmadWeb\ChatUmadWeb.csproj", "{CA12BB4D-FA4D-4443-9F62-E7ECA1B36A0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{7E28EAC1-197A-4B0A-84BA-F62D0B95A7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E28EAC1-197A-4B0A-84BA-F62D0B95A7D3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E28EAC1-197A-4B0A-84BA-F62D0B95A7D3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CA12BB4D-FA4D-4443-9F62-E7ECA1B36A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA12BB4D-FA4D-4443-9F62-E7ECA1B36A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA12BB4D-FA4D-4443-9F62-E7ECA1B36A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA12BB4D-FA4D-4443-9F62-E7ECA1B36A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

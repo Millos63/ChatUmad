@@ -8,7 +8,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate paginas:Login}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate paginas:UserList}"
+        Route="UserList" />
 
 </Shell>

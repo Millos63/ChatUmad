@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatUmad.Paginas.EditUser"
+             Title="ChatUMAD">
+
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#D9D9D9">
+            <StackLayout Padding="20" Spacing="20">
+                <Label Text="Usuario" 
+                       TextColor="Black"
+                       FontSize="24" 
+                       HorizontalOptions="Center" />
+
+                <Entry Placeholder="Nombre"
+               x:Name="NameEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333" />
+
+                <Entry Placeholder="Email"
+               x:Name="EmailEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333" />
+
+                <Entry Placeholder="Carrera"
+               x:Name="DegreeEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333" />
+
+                <Entry Placeholder="Matrícula"
+               x:Name="RegistrationEntry"
+               FontSize="18"
+               BackgroundColor="#EDEDED"
+               HeightRequest="40"
+               TextColor="#333333"
+               Keyboard="Numeric" />
+
+                <Picker x:Name="RolePicker"
+                Title="Seleccionar rol"
+                TitleColor="#666666"
+                TextColor="#333333"
+                BackgroundColor="#EDEDED"
+                FontSize="18"
+                HeightRequest="70">
+                    <!-- Agrega las opciones de selección de roles aquí -->
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Administrador</x:String>
+                            <x:String>Capturista</x:String>
+                            <x:String>Coordinador</x:String>
+                            <x:String>Alumno</x:String>
+                            <x:String>Profesor</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Picker x:Name="StatePicker"
+                Title="Seleccionar estado"
+                TitleColor="#666666"
+                TextColor="#333333"
+                BackgroundColor="#EDEDED"
+                FontSize="18"
+                HeightRequest="70">
+                    <!-- Agrega las opciones de selección de estado aquí -->
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Activo</x:String>
+                            <x:String>Baja</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Button Text="Guardar"
+                FontSize="18"
+                TextColor="White"
+                BackgroundColor="Green"
+                CornerRadius="5"
+                HeightRequest="40"
+                WidthRequest="120"
+                Clicked="OnClickSave"
+                HorizontalOptions="End" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+    
+    
+    
+</ContentPage>

@@ -16,7 +16,7 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Cambiando el texto para hacer el primer commit en GitHub! NADIA"
+                Text="Cambiando el texto para hacer el primer commit en GitHub!/ROY2"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -29,8 +29,8 @@
                 HorizontalOptions="Center" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
+                x:Name="Alumno"
+                Text="Busqueda Alumno"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
