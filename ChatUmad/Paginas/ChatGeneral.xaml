@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatUmad.Paginas.ChatGeneral"
+             Title="ChatUmad">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="lableStyle">
+                <Setter Property="TextColor" Value="Black"></Setter>
+                <Setter Property="FontSize" Value="20" ></Setter>
+                <Setter Property="FontAttributes" Value="Bold" ></Setter>
+
+            </Style>
+            <Style TargetType="Entry" x:Key="EntryStyle">
+                <Setter Property="TextColor" Value="Black"></Setter>
+                <Setter Property="Placeholder" Value="Escribe tu mensaje... " ></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Image Grid.Row="0" Source="logo.jpg"  
+                   HorizontalOptions="Start" 
+                   VerticalOptions="Start" 
+                   HeightRequest="100" 
+                   WidthRequest="100" />
+
+
+
+            <Frame Grid.Row="0" BackgroundColor="White" HasShadow="True" Padding="10" CornerRadius="0">
+             
+           
+                <StackLayout>
+                    <Label 
+                        Style="{StaticResource lableStyle}"
+                        Text="Chat General"/>
+
+                    <BoxView Color="Gray"
+                    HeightRequest="2"
+                    HorizontalOptions="Fill" 
+                    />
+                </StackLayout>
+                
+               
+            </Frame>
+                        
+            <!-- Contenido principal (lista y entrada de texto) -->
+            <StackLayout>
+                <ListView 
+                          VerticalOptions="FillAndExpand">
+                    <!-- ... (Plantilla de mensajes) ... -->
+                </ListView>
+
+                <!-- Caja de entrada de texto y botón de envío -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                    <Entry 
+                           Style="{StaticResource EntryStyle}"
+                           VerticalOptions="FillAndExpand"
+                           HorizontalOptions="FillAndExpand" />
+
+                    <Button Text="Enviar"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            BackgroundColor="#1B2953"
+                            VerticalOptions="FillAndExpand"
+                            WidthRequest="80" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

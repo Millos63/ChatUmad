@@ -16,6 +16,7 @@
 
             <Label
                 Text="Hola al chat UMAD"
+                Text="Cambiando el texto para hacer el primer commit en GitHub!/ROY2"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -27,6 +28,8 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
             <Button
+                x:Name="Alumno"
+                Text="Busqueda Alumno"
                 x:Name="CounterBtn"
                 Text="Entrar como coordinador"
                 SemanticProperties.Hint="Counts the number of times you click"
