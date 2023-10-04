@@ -6,8 +6,8 @@
     <Grid Margin="0"
           RowDefinitions="Auto,*,Auto">
         <Label
-            Text="Avisos Generales"
-            FontSize="50"
+            Text="Avisos generales"
+            FontSize="25"
             HorizontalOptions="FillAndExpand"
             HorizontalTextAlignment="Start"
             BackgroundColor="#1B2953"/>

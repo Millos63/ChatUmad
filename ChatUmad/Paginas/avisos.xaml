@@ -7,14 +7,14 @@
     <Grid Margin="0"
           RowDefinitions="Auto,*,Auto">
         <Label
-            Text="Avisos Generales"
-            FontSize="50"
+            Text="Avisos generales"
+            FontSize="30"
             HorizontalOptions="FillAndExpand"
             HorizontalTextAlignment="Start"
             BackgroundColor="#1B2953"/>
         <Image
             Source="logo.png"
-            HeightRequest="50"
+            HeightRequest="45"
             HorizontalOptions="End"
             BackgroundColor="White"/>
         <ScrollView
@@ -57,19 +57,18 @@
             Placeholder="Insertar Aviso"
             TextColor="Black"
             PlaceholderColor="#1B2953"
-            FontSize="20"
+            FontSize="18"
             BackgroundColor="White"
             />
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="End">
             <Button Text="Publicar"
-                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="ShowToastButtonClicked"
                     BackgroundColor="#1B2953"
                     TextColor="White"
                     HorizontalOptions="Fill"
                     VerticalOptions="End"/>
 
             <Button Text="Imagen"
-                    SemanticProperties.Hint="Counts the number of times you click"
                     Clicked="OnCounterClicked"
                     BackgroundColor="#1B2953"
                     TextColor="White"
