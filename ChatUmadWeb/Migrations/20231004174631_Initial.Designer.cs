@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChatUmadWeb.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231002112055_Initial")]
+    [Migration("20231004174631_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
