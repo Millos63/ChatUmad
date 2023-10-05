@@ -5,8 +5,6 @@ namespace ChatUmadWeb.Data.Entities
     public class Message : IEntity
     {
         public int Id { get; set; }
-        public Chat Chat { get; set; }
-        public User User { get; set; }
 
         [Required(ErrorMessage = "{0} es obligatorio.")]
         [DataType(DataType.Date)]
@@ -21,6 +19,8 @@ namespace ChatUmadWeb.Data.Entities
 
         [Display(Name = "Archivo")]
         public string? File { get; set; }
+        public Chat Chat { get; set; }
+        public User User { get; set; }
     }
 
 }

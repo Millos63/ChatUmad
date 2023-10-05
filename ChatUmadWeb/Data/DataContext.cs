@@ -10,6 +10,7 @@ namespace ChatUmadWeb.Data
     {
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Capturer> Capturers { get; set; }
+        public DbSet<Career> Careers{ get; set; }
         public DbSet<Chat> Chats { get; set; }
         public DbSet<ChatMember> ChatMembers { get; set; }
         public DbSet<Coordinator> Coordinators { get; set; }
